@@ -12,10 +12,22 @@
  # install express
   npm install express --save
   
+  # package.json created automatically after running above command
+  # make sure to make changes in this file from index.js to app.js
+  and add 
+  
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "node index.js"
+}
+
+  
   vi app.js
  
  # start app
  node app.js
+ 
+ 
  
  vi Dockerfile
  
