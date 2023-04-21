@@ -2,14 +2,17 @@
 
 # create project directory
  mkdir node-web-app
+ 
  cd node-web-app
  
  # initialize project directory
+ 
  npm init
  
  apt install npm     // if not present
  
  # install express
+ 
   npm install express --save
   
   # package.json created automatically after running above command
@@ -18,6 +21,7 @@
   
   "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
+  
   "start": "node index.js"
 }
 
