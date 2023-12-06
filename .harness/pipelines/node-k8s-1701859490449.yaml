@@ -25,7 +25,8 @@ pipeline:
                     connectorRef: account.harnessImage
                     repo: pavan8767 / harness-ci
                     tags:
-                      - demo
+                      - latest
+                    dockerfile: Dockerfile
                   when:
                     stageStatus: All
           platform:
