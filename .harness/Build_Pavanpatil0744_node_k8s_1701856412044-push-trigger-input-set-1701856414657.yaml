@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Pavanpatil0744_node_k8s_1701856412044-push-trigger-input-set
+  identifier: Build_Pavanpatil0744_node_k8s_1701856412044pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Pavanpatil0744_node_k8s_1701856412044
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
