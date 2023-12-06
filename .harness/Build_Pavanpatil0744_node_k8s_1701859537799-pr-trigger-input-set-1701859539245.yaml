@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Pavanpatil0744_node_k8s_1701859537799-pr-trigger-input-set
+  identifier: Build_Pavanpatil0744_node_k8s_1701859537799prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: pythonci
+  pipeline:
+    identifier: Build_Pavanpatil0744_node_k8s_1701859537799
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
