@@ -1,0 +1,37 @@
+pipeline:
+  identifier: Build_Pavanpatil0744_node_k8s_1701859537799
+  name: Build node-k8s
+  orgIdentifier: default
+  projectIdentifier: pythonci
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1701856371806
+        repoName: Pavanpatil0744/node-k8s
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: dockerbuild
+                  name: docker_build
+                  spec:
+                    image: plugins/docker
+                    settings:
+                      dry_run: "true"
+                      repo: hello/world
+                      tags: latest
+                  timeout: ""
+                  type: Plugin
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
